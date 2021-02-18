@@ -1,6 +1,9 @@
 fun main(){
     // Extension Function Demo with when statement
-    print("The answer is ${5.Calculator(14, "minus")}")
+    println("The answer for plus is ${14.Calculator(7, "sum")}")
+    println("The answer for minus is ${14.Calculator(7, "minus")}")
+    println("The answer for multiplication is ${14.Calculator(7, "multiply")}")
+    println("The answer for division is  ${14.Calculator(7, "divide")}")
 }
 
 
