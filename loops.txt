@@ -1,0 +1,62 @@
+// Loops Demo
+fun main(args: Array<String>) { 
+ 
+    // For Loops Demo-0
+    var fruit = listOf("Apple", "Banana", "Orange")
+    for(f in fruit){
+        println(f)
+    }
+
+     // For Loops Demo-1
+    var fruits = listOf("Apple", "Banana", "Orange")
+    for((index, element) in fruits.withIndex()){
+        println("$index $element")
+    }
+    
+    //  For loop Demo-2
+    
+    var map = mapOf(1 to "One", 2 to "Two", 3 to "Three")
+    for((Key,value) in map){
+        println("$Key $value")
+    }
+    
+    // For Loop Demo-3
+    
+    for(i in 1..15){
+        println(i)
+    }
+    
+     // For Loop Demo-4
+    
+    for(i in 1 until 10){
+        println(i)
+    }
+    
+     // For Loop Demo-5
+    
+    for(i in 9 downTo 1 step 2){
+        println(i)
+    }
+    
+    // For Loop Demo-6
+    for (ch in "abc") {
+        println(ch + 1) 
+}
+    
+    // For loop Demo-7
+    
+    for(i in 'a'.. 'z'){
+        println(i)
+    }
+    
+    // For loop Demo-8
+    
+    checkingLetter('*')
+   
+}
+
+fun checkingLetter(c: Char){
+    if (c in 'a' .. 'z' || c in 'A' .. 'Z')
+        println("Yes") else println("No")
+    
+}
